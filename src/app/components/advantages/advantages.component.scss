@@ -137,12 +137,10 @@
   }
 }
 @media (max-width: 830px) {
-  .advantages .container {
+  .container {
+    width: 100% !important;
     display: flex;
     flex-direction: column;
-  }
-  .advantages .container .two .container {
-    width: 100% !important;
     grid-template-areas:
       "box-1 box-1"
       "box-2 box-2"

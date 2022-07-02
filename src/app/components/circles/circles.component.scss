@@ -23,17 +23,11 @@
     width: 90% !important;
   }
 }
-
 @media (max-width: 830px) {
   .desktop {
     display: none !important;
   }
   .mobile {
     display: block !important;
-  }
-}
-@media (max-width: 400px) {
-  .container {
-    width: 95% !important;
   }
 }
