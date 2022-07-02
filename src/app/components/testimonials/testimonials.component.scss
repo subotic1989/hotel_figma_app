@@ -86,7 +86,7 @@
     .one {
       .shape1 {
         position: absolute;
-        bottom: 55%;
+        bottom: 35%;
         left: -40px;
         width: 30%;
         height: auto;
@@ -128,7 +128,7 @@
 
 @media (min-width: 2000px) {
   .container {
-    width: 50% !important;
+    width: 70% !important;
   }
 }
 @media (max-width: 1150px) {
