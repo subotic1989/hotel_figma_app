@@ -19,14 +19,17 @@
       }
     }
 
-    .links {
-      display: flex;
-      justify-content: space-between;
-
-      .link-1,
-      .link-2 {
-        flex-direction: column;
+    .two {
+      width: 50%;
+      .links {
         display: flex;
+        justify-content: space-between;
+
+        .link-1,
+        .link-2 {
+          flex-direction: column;
+          display: flex;
+        }
       }
     }
 
