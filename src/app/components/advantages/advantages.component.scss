@@ -127,16 +127,6 @@
   }
 }
 
-@media (min-width: 2000px) {
-  .container {
-    width: 70% !important;
-  }
-}
-@media (max-width: 1150px) {
-  .container {
-    width: 90% !important;
-  }
-}
 @media (max-width: 830px) {
   .con {
     width: 100% !important;
@@ -163,9 +153,10 @@
     display: none;
   }
 }
+
 @media (max-width: 620px) {
   .container {
-    width: 80% !important;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto)) !important;
+    width: 95% !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)) !important;
   }
 }

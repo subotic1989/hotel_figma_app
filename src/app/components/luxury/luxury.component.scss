@@ -3,7 +3,8 @@
   padding: 80px 0px;
 
   .container {
-    width: 80%;
+    max-width: 1680px;
+    width: 95%;
     margin: auto;
     display: grid;
     align-items: center;
@@ -102,7 +103,7 @@
           position: absolute;
           height: auto;
           width: 40% !important;
-          right: -30px;
+          right: -15px;
           bottom: 15%;
           box-shadow: 20px 20px 40px 1px rgba(0, 0, 0, 0.1);
         }
@@ -121,19 +122,9 @@
   }
 }
 
-@media (min-width: 2000px) {
-  .container {
-    width: 70% !important;
-  }
-}
-@media (max-width: 1150px) {
-  .container {
-    width: 90% !important;
-  }
-}
 @media (max-width: 620px) {
   .container {
-    width: 80% !important;
+    width: 90% !important;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto)) !important;
   }
 }
