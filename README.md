@@ -1,27 +1,34 @@
-# HotelFigma2
+---
+title: 'ButtonControl'
+---
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+# ButtonControl
 
-## Development server
+The ButtonControl invokes a predefined custom callback.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```html
+<div id="buttonControlSample" 
+    data-win-control="HFWinJSCtrl.ButtonControl" 
+    data-win-options="{
+        buttonType: 'large',
+        buttonLabel: 'Test',
+        buttonHeading: 'Button',
+        callback: HFFormdefinition.SampleHelpers.buttonControlCallback
+    }"></div>
+```
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Property               | Type   | How to use                                 | Description                                                                        |
+| ---------------------- | ------ | ------------------------------------------ | ---------------------------------------------------------------------------------- |
+| **callback** **\***    | Function() | `callback: HFFormdefinition.Namespace.Method` | Call a pre-defined JS-method to do something when the button is invoked. address. |
+| **buttonType** **\***  | String | `buttonType: 'medium'`                     | Define the size of the button ('small', 'medium' or 'large').                      |
+| buttonLabel **\*\***   | String | `buttonLabel: 'Button'`                  | Define the button caption. <br />Only visible by choosing buttonType 'medium' or 'large'. |
+| buttonHeading **\*\*** | String | `buttonHeading: 'Test'`                    | Define a label for the control element.                                            |
+| icon                   | String | `icon: 'fa-barcode-scan'`                  | Sets the icon of the button. Can be FontAwesome Icon or SVG Image.                 |
+| vibrationFeedback      | Boolean | `vibrationFeedback: true`                  | Enable/Disable vibration feedback on click. Default is `true`.                 |
+| audioFeedback      | Boolean | `audioFeedback: true`                  | Enable/Disable audio feedback on click. Default is `true`.                 |
+| callbackFeedback      | Boolean | `callbackFeedback: true`                  | Enable/Disable callback feedback on callback funtion return. Default is `true`.  |
+| disableOnClick      | Boolean | `disableOnClick: false`                  | Disable button while callback function is executed. Default is `false`.  |
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**\*  These options are required.**  
+**\*\*** Please provide at least one of these options.
